@@ -1,0 +1,57 @@
+-- QNO26
+-- select salary
+-- from pranavu
+-- order by salary desc
+-- limit 3;
+
+-- QNO27
+-- select salary
+-- from pranavu
+-- order by salary
+-- limit 3;
+
+-- QNO28
+-- select distinct SALARY
+-- from pranavu
+-- order by SALARY desc
+-- limit 1 offset 10-1;
+
+-- QNO29
+-- select *
+-- from(
+-- 	select*
+-- 	from pranavu
+-- 	order by
+-- 	pranavu
+-- 	limit 10
+-- ) as last_10_records;
+
+-- qno22
+-- select fname,lname,salary
+-- from pranavu
+-- where salary>(select salary
+-- from pranavu where
+-- lname='bell');
+
+-- qno23
+-- select * from pranavu
+-- where salary=(
+-- 	select min(salary)
+-- 	from pranavu
+-- 	group by dept_id)
+
+-- qno30
+
+-- select dept_id,dept from pranavu
+-- where dept_id not in (select distinct dept_id
+-- from pranavu
+-- where dept_id is not null)
+
+-- qno25
+-- select eid,fname,lname
+-- (select dept from pranavu where dept_id=dept_id) as dept 
+-- from pranavu
+
+
+
+
